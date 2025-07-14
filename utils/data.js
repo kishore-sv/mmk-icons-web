@@ -1,4 +1,4 @@
-import { XIcon, ReactIcon, NextjsIcon, TailwindIcon, MongoDbIcon, PostgresIcon, SqlIcon, HtmlIcon, CssIcon, JsIcon, TsIcon, NpmIcon, ReduxIcon, GraphQlIcon, ExpressIcon, DevIcon, SassIcon, WebPackIcon, DockerIcon, GitIcon, GoogleIcon, GitHubIcon, PythonIcon, AppleIcon, NetflixIcon, SpotifyIcon, GoogleColoredIcon, GitHubColorIcon, YouTubeIcon, ChatGPTIcon, ClerkIcon, KubernetesIcon, LinuxIcon, UbuntuIcon, ArchLinuxIcon, MintLinuxIcon, FaceBookIcon, InstagramIcon, LinkedinIcon, SnapChatIcon, TwitterBirdIcon, NodejsIcon, AngularIcon, VuejsIcon, NuxtjsIcon, BootStrapIcon, DjangoIcon, SpringIcon, SpringBootIcon, PHPIcon, LangChainIcon, FireBaseIcon, MicrosoftIcon, NvidiaIcon, MetaIcon, NotionIcon, RollupIcon, ViteIcon, SnowpackIcon, ESbuildIcon, AndroidIcon, SwiftIcon, IOSIcon, AppStoreIcon, AppleMusicIcon, CplusplusIcon, MotionIcon, DiscordIcon, GoogleMapsIcon, FlutterIcon, RustIcon, FlaskIcon } from "./icons";
+import { XIcon, ReactIcon, NextjsIcon, TailwindIcon, MongoDbIcon, PostgresIcon, SqlIcon, HtmlIcon, CssIcon, JsIcon, TsIcon, NpmIcon, ReduxIcon, GraphQlIcon, ExpressIcon, DevIcon, SassIcon, WebPackIcon, DockerIcon, GitIcon, GoogleIcon, GitHubIcon, PythonIcon, AppleIcon, NetflixIcon, SpotifyIcon, GoogleColoredIcon, GitHubColorIcon, YouTubeIcon, ChatGPTIcon, ClerkIcon, KubernetesIcon, LinuxIcon, UbuntuIcon, ArchLinuxIcon, MintLinuxIcon, FaceBookIcon, InstagramIcon, LinkedinIcon, SnapChatIcon, TwitterBirdIcon, NodejsIcon, AngularIcon, VuejsIcon, NuxtjsIcon, BootStrapIcon, DjangoIcon, SpringIcon, SpringBootIcon, PHPIcon, LangChainIcon, FireBaseIcon, MicrosoftIcon, NvidiaIcon, MetaIcon, NotionIcon, RollupIcon, ViteIcon, SnowpackIcon, ESbuildIcon, AndroidIcon, SwiftIcon, IOSIcon, AppStoreIcon, AppleMusicIcon, CplusplusIcon, MotionIcon, DiscordIcon, GoogleMapsIcon, FlutterIcon, RustIcon, FlaskIcon, NvimIcon, VimIcon } from "./icons";
 
 export const data = [
     {
@@ -161,43 +161,8 @@ export const data = [
     { name: "flutteicon", icon: <FlutterIcon className="w-full h-full" />, iconName: "FlutterIcon" },
     { name: "rusticon", icon: <RustIcon className="w-full h-full" />, iconName: "RustIcon" },
     { name: "flaskicon", icon: <FlaskIcon className="w-full h-full" />, iconName: "FlaskIcon" },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    { name: "nvimicon", icon: <NvimIcon className="w-full h-full" />, iconName: "NvimIcon" },
+    { name: "vimicon", icon: <VimIcon className="w-full h-full" />, iconName: "VimIcon" },
 
 
 ]
