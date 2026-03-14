@@ -9,3 +9,5 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: 'https://icons.kishore-sv.me/sitemap.xml',
   }
 }
+
+export const dynamic = "force-static"

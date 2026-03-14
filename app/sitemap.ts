@@ -45,3 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...iconPages,
   ]
 }
+
+export const dynamic = "force-static"
