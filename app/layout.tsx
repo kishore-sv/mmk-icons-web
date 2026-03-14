@@ -60,6 +60,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en" suppressHydrationWarning>
         <head>
+          <meta name="google-site-verification" content="jCZEMBZli1xqreUKnEgoNvrmaQ2RnHp56pSpl_bbPo4" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
