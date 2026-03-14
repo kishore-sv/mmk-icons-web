@@ -26,9 +26,6 @@
       "@/*": [
         "./*"
       ],
-      "mmk-icons": [
-        "../mmk-icons/src/index.ts"
-      ]
     }
   },
   "include": [
