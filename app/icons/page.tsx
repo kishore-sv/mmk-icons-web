@@ -3,47 +3,55 @@ import { Link } from "next-view-transitions";
 import { ReactNode } from "react";
 import { normalIcons } from "@/utils/normalcons"
 import { Metadata } from "next";
+import QuickCopy from "@/components/QuickCopy";
 
 export const metadata: Metadata = {
-    title: "MMK Icons",
-    description: "All icons of mmk",
+    title: "Icon Library",
+    description: "Browse the complete set of 70+ premium vector icons. Search and find the perfect icons for your React or Next.js app.",
 };
 
-
-
-function Icon({ icon, name, iconName }: { icon?: ReactNode; name?: string; iconName?: string }) {
+function Icon({ icon, name, iconName }: { icon?: ReactNode; name: string; iconName: string }) {
     return (
-        <Link href={`/icons/${name}`} className="flex cursor-pointer w-[20%] lg:w-1/6 flex-col gap-2 justify-center rounded-lg items-center hover:bg-neutral-200 dark:hover:bg-neutral-800 bg-neutral-200/70 dark:bg-neutral-800/70 px-0.5 py-2  ">
-            {icon}
-            {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z" /></svg> */}
-            <p className="font-semibold w-[100%] flex text-neutral-600 dark:text-neutral-200 lg:justify-center items-center truncate  " >{iconName}</p>
-        </Link>
+        <div className="group relative w-[45%] md:w-[22%] lg:w-1/6">
+            <Link
+                href={`/icons/${name}`}
+                className="flex cursor-pointer w-full flex-col gap-2 justify-center rounded-xl items-center dark:bg-neutral-800/50 hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 transition-all border border-transparent hover:border-neutral-500/10 hover:shadow-xl dark:hover:shadow-neutral-900/50 bg-neutral-100  p-4"
+            >
+                <div className="w-12 h-12 flex items-center justify-center text-neutral-800 dark:text-neutral-100 group-hover:scale-110 transition-transform duration-300">
+                    {icon}
+                </div>
+                <p className="font-semibold text-sm text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 transition-colors truncate w-full text-center px-2">
+                    {iconName}
+                </p>
+            </Link>
+            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                <QuickCopy text={iconName} className="bg-white/80 dark:bg-neutral-800/80 backdrop-blur shadow-sm border border-neutral-500/20" />
+            </div>
+        </div>
     )
 }
 
 export default function Icons() {
-
     return (
-        <div className="lg:w-[80%] w-[100%] " >
-            <h1 className="text-3xl font-bold mb-4 " >Icons</h1>
-            <p className="text-md ml-1">MMK icons consists themed and colorfull icons which make your app beautiful</p>
-            <p className="text-md  ml-1 " >Search for icons from above search bar</p>
-            <div className="  border-b border-neutral-500/50 mb-4 mt-6 " ></div>
-
-            <div className=" w-full flex gap-5 flex-wrap   ">
-
-                {
-                    normalIcons.map((icon) => (
-                        <Icon key={icon.iconName} icon={icon.icon} name={icon.name} iconName={icon.iconName} />
-                    ))
-                }
-
+        <div className="lg:w-[90%] w-full max-w-7xl mx-auto" >
+            <div className="mb-10 space-y-2">
+                <h1 className="text-4xl font-bold tracking-tight" >Icon Library</h1>
+                <p className="text-lg text-neutral-500 dark:text-neutral-400">
+                    A curated collection of modern, themed and colorful icons for your next project.
+                </p>
             </div>
 
-            <div className=" w-[80%] lg:w-auto " >
+            <div className="h-px w-full bg-gradient-to-r from-neutral-500/30 via-neutral-500/10 to-transparent mb-12" />
+
+            <div className="w-full flex gap-6 flex-wrap justify-start">
+                {normalIcons.map((icon) => (
+                    <Icon key={icon.iconName} icon={icon.icon} name={icon.name} iconName={icon.iconName} />
+                ))}
+            </div>
+
+            <div className="mt-20">
                 <Footer next={"/docs"} nextName={"Docs"} prev="/usage" prevName="Usage" />
             </div>
-
         </div>
     )
 }

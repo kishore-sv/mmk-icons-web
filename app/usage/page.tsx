@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Usage",
-  description: "usage of icons ",
+  description: "Learn how to use MMK Icons in your components. See examples of how to customize size, fill, and styles.",
 };
 
 export default function Usage() {
@@ -15,9 +15,10 @@ const App = () => {
   return (
 
     <NextjsIcon
-     className="text-neutral-900"
-     fill="white"
-     style={{width:"30px",heigth:"30px"}}
+      size="40"
+      className="text-neutral-900"
+      fill="white"
+      style={{height:"30px"}}
     />
     
   );
@@ -25,8 +26,7 @@ const App = () => {
 
 export default App;`
 
-  const code1 = `make highlit of lines which are in change.Like bg-neutral-900
-import { NextjsIcon } from 'mmk-icons';
+  const code1 = `import { NextjsIcon } from 'mmk-icons';
 
 const App = () => {
   return (
@@ -34,7 +34,7 @@ const App = () => {
   );
 };
 
-export default App; then got to somthing that is not useful using this icons then run your app `
+export default App;`
 
 
 

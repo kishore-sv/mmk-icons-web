@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  transpilePackages: ['mmk-icons'],
 }
  
-module.exports = nextConfig
+export default nextConfig

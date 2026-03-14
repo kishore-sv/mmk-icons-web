@@ -1,11 +1,11 @@
-import { NpmIcon } from "@/utils/icons";
+import { NpmIcon } from "mmk-icons";
 import { Metadata } from "next";
 import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "MMK Icons",
-  description: "Welcome to the MMK icons documentation!",
+  title: "Introduction",
+  description: "Welcome to the MMK icons documentation! Learn how to use our modern icon library for React and Next.js.",
 };
 
 
@@ -25,7 +25,7 @@ export default function Home() {
       <h2 className="text-xl font-bold mb-4 " >How to use the docs</h2>
       <p className="text-md ml-2" >Get started with <Link className="text-blue-500 hover:underline text-md " href="/installation" >installation</Link> </p>
       <p className="text-md ml-2">Use the sidebar to navigate through the sections, or search (Ctrl+K or Cmd+K) to quickly find a page.</p>
-      <Link target="_blank" href={"https://www.npmjs.com/package/mmk-icons"} className="text-md ml-2 flex m-2 gap-2 items-center " > <NpmIcon/> <p className="text-blue-500 hover:underline" >Check out npm package</p></Link>
+      <Link target="_blank" href={"https://www.npmjs.com/package/mmk-icons"} className="text-md ml-2 flex m-2 gap-2 items-center " > <NpmIcon /> <p className="text-blue-500 hover:underline" >Check out npm package</p></Link>
 
       <div className="  border-b border-neutral-500/50 mb-10 mt-10 " ></div>
 
@@ -39,7 +39,7 @@ export default function Home() {
       <p className="text-md ml-2 " >
         As new applications with specific features arise, mmk aims to provide a complete set of icons for every project. The community follows a set of design rules when designing new icons. These rules maintain standards for the icons, such as recognizability, consistency in style, and readability at all sizes. While creativity is valued in new icons, recognizable design conventions are important to ensure that the icons are easily identifiable by users.
 
-      </p> 
+      </p>
     </div>
   );
 }

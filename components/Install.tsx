@@ -1,16 +1,14 @@
 import CodeEditor from "./CodeEditor";
 import Footer from "./Footer";
+import InstallTabs from "./InstallTabs";
 
 export default function Install() {
 
-  const code = `1{
-2 "scripts": {
-3   "dev": "next dev",
-4   "build": "next build",
-5    "start": "next start",
-6    "lint": "next lint"
-7 }
-8}`
+  const code = `{
+  "dependencies": {
+    "mmk-icons": "^0.1.0"
+  }
+}`
 
   const code1 = `import { NextjsIcon } from 'mmk-icons';
 
@@ -31,10 +29,7 @@ export default App;`
       <p className="text-md  ml-1 " >Step to install mmk icons into your project.</p>
       <div className="  border-b border-neutral-500/50 mb-10 mt-10 " ></div>
 
-      <h1 className="text-3xl font-bold mb-4 " > Quick installation</h1>
-      <p className="text-md ml-1 " >The quickest way to install icons is using npm install mmk-icons, which installs icons into your project. To install package, run:</p>
-
-      <CodeEditor title={"Terminal"} code={"npm install mmk-icons"} />
+      <InstallTabs />
 
       <div className="  border-b border-neutral-500/50 mb-10 mt-10 " ></div>
 

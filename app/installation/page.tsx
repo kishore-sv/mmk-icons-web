@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Installation",
-  description: "installation of icons ",
+  description: "Learn how to install MMK Icons in your React or Next.js project using npm, pnpm, yarn, or bun.",
 };
 
 

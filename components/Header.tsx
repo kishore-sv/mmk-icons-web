@@ -2,6 +2,7 @@
 import { Link } from "next-view-transitions";
 import { useEffect, useRef, useState } from "react";
 import SearchModal from "./SearchModal";
+import Logo from "./logo";
 
 export default function Header() {
     const [dark, setDark] = useState<boolean>(false)
@@ -10,11 +11,13 @@ export default function Header() {
     const [open, setOpen] = useState<boolean>(false)
 
     useEffect(() => {
-        const stored = localStorage.getItem('theme')
-        if (stored === 'dark') {
-            document.documentElement.classList.add('dark')
+        // Sync state with document theme set by head script
+        if (document.documentElement.classList.contains('dark')) {
             setDark(true)
         }
+
+        // Remove preload class to enable transitions
+        document.body.classList.remove('preload');
 
 
 
@@ -67,21 +70,23 @@ export default function Header() {
     return (
         <>
             <header className="z-[999] h-[8vh] bg-[rgba(255,255,255,0.5)]  dark:bg-[rgba(0,0,0,.5)] backdrop-blur-sm sticky top-0 w-full border-b border-neutral-500/50 flex justify-between items-center px-2 py-3 ">
-                <section className="flex justify-center items-center " >
-                    <img src="/vercel.svg" alt="" className="h-10 w-10 lg:mx-5 bg-neutral-900 dark:bg-neutral-950 " />
-                    <Link href={"/"} className="lg:text-2xl tracking-tighter  font-bold  " > MMK Icons</Link>
+                <section className="flex justify-center items-center tracking-tighter " >
+                    <Link href={"/"} className="lg:text-2xl font-bold flex items-center gap-2" >
+                        <Logo className="size-14 lg:ml-5 rounded-md" />
+                        Icons
+                    </Link>
                 </section>
                 <section className="flex justify-end items-center  lg:w-[50%] gap-5 lg:pr-10 " >
 
 
-                    <button onClick={()=>setOpen(true)} className="lg:hidden " >
+                    <button onClick={() => setOpen(true)} className="lg:hidden " >
                         <svg className="text-neutral-800 dark:text-neutral-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
                     </button>
                     <input
                         ref={inputRef}
                         onClick={() => setOpen(true)}
                         type="text" placeholder="Search icon name..." className="hidden lg:block px-3 py-2 w-[50%] font-medium text-neutral-900 dark:text-neutral-200 rounded-lg bg-neutral-100 text-md  dark:bg-neutral-900 outline-none " />
-                    <span onClick={() => setOpen(true)}  className=" hidden right-[9.8rem] absolute dark:bg-neutral-800 dark:text-neutral-300/80 bg-neutral-200 text-neutral-700 rounded-lg py-0.5 px-1  lg:flex justify-center items-center  " >
+                    <span onClick={() => setOpen(true)} className=" hidden right-[9.8rem] absolute dark:bg-neutral-800 dark:text-neutral-300/80 bg-neutral-200 text-neutral-700 rounded-lg py-0.5 px-1  lg:flex justify-center items-center  " >
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" /></svg>
                         +K
                     </span>
