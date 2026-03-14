@@ -61,7 +61,7 @@ export default App;`;
           </div>
         </div>
 
-        <div className="flex-1 w-full space-y-6">
+        <div className="flex-1 w-[80%] md:w-[70%] space-y-6">
           <div>
             <h1 className="text-4xl truncate font-bold tracking-tight text-neutral-900 dark:text-neutral-50 mb-2">
               {icon.iconName}
