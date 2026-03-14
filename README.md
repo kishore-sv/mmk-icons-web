@@ -1,13 +1,42 @@
-# 🧩 mmk-icons
+<p align="center">
+<img src="https://icons.kishore-sv.me/mmk-white.png" alt="mmk-icons"/>
+<br>
+<a href="https://www.npmjs.com/package/mmk-icons">
+<img src="https://img.shields.io/npm/v/mmk-icons" alt="npm version"/>
+</a>
+<a href="https://www.npmjs.com/package/mmk-icons">
+<img src="https://img.shields.io/npm/l/mmk-icons" alt="npm license"/>
+</a>
+<a href="https://www.npmjs.com/package/mmk-icons">
+<img src="https://img.shields.io/npm/dt/mmk-icons" alt="npm downloads"/>
+</a>
 
-A beautifully curated set of SVG developer icons — React, Next.js, TailwindCSS, GitHub, and more — built for seamless integration into **React** and **Next.js** projects.
+</p>
 
-## ✨ Features
 
-- ⚛️ Ready-to-use React components
-- 🎨 Full styling support (`className`, `fill`, `style`)
-- 🧩 Easy to scale, animate, and theme with Tailwind CSS or custom styles
-- 📦 Tree-shakable and lightweight
+<p align="center">
+<h1 align="center">mmk-icons</h1>
+<p align="center">A collection of developer icons — React, Next.js, TailwindCSS, GitHub, and more — built for seamless integration into <b>React</b> and <b>Next.js</b> projects.</p>
+</p>
+
+<p align="center">
+ - <a align="center" href="https://icons.kishore-sv.me/icons">
+icons
+</a>
+ - <a align="center" href="https://icons.kishore-sv.me/installation">
+installation
+</a>
+ - <a align="center" href="https://icons.kishore-sv.me/usage">
+usage
+</a>
+</p>
+
+## Features
+
+- Ready-to-use React components
+- Full styling support (`className`, `fill`, `style`)
+- Easy to scale, animate, and theme with Tailwind CSS or custom styles
+- Tree-shakable and lightweight
 
 ---
 ## Npm Package
@@ -15,7 +44,7 @@ A beautifully curated set of SVG developer icons — React, Next.js, TailwindCSS
 [![image](https://github.com/user-attachments/assets/74cd9ba0-45e7-42b8-b8b1-71605c703953)
 ](https://www.npmjs.com/package/mmk-icons)
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install mmk-icons
