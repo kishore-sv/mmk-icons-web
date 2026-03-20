@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://icons.kishore-sv.me/mmk-white.png" alt="mmk-icons"/>
-<br>
+<br/>
 <a href="https://www.npmjs.com/package/mmk-icons">
 <img src="https://img.shields.io/npm/v/mmk-icons" alt="npm version"/>
 </a>
